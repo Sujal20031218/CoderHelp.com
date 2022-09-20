@@ -1,0 +1,1 @@
+let SignUp = document.querySelector('button')

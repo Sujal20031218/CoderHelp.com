@@ -1,0 +1,332 @@
+* {
+    box-sizing:border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h1 {
+   text-align: center;
+    font-size: 40px;
+    color: white;
+
+    background-attachment: fixed;
+}
+
+header {
+    padding: 40px;
+    background-color: rgb(17, 124, 143);
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    background-color: #333;
+   
+}
+
+
+
+nav a{
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+
+   
+
+main {
+    background-color: white;
+    text-align: center;
+}
+
+h2 {
+    padding: 20px;
+}
+
+section:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+section {
+    min-height: 100vh;
+}
+
+video {
+    padding: 10px;
+}
+
+iframe {
+    height: 75vh;
+}
+
+img {
+    padding: 10px;
+}
+
+section h5 {
+    margin: 40px;
+}
+
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white; 
+}
+
+a{
+    color: brown;
+} 
+
+/*aside{
+   width:20% fit-content ; float: right; background-color: rgb(65, 65, 65); color: whitesmoke;padding: 10%;
+} */
+
+.image1{
+    background-image: url(file:///Users/sujalsinha/Desktop/Sujal/PROJECT/header.jpg);
+}
+  /* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+img { max-width: 100%; }
+
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+/*
+.banner{
+    background-image: url(file:///Users/sujalsinha/Desktop/Sujal/PROJECT/logo3.png);
+    height: 20vw;
+    min-height: 1000%;
+    background-repeat: no-repeat;
+    background-position: top center ;
+    background size: 1000%;
+    background-attachment: fixed
+}
+*/
+.flex-align-right{
+    margin-left: auto;
+}
+
+section h2 span {
+    background:brown;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: linen;
+}
+.menubutton:hover{
+    background-color: whitesmoke ;
+    color:black ;
+}
+
+input[type="submit"]{
+    background-color: brown;
+    color: honeydew;
+    padding:12px 20px;
+ border: 0;
+    border-radius: 4px;
+    cursor: grab;
+    width: 100%;
+}
+
+  
+.carousel-cell {
+  
+    margin-right: 10px;
+  
+    border-radius: 5px;
+   
+  }
+  
+  /* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+  
+  
+ 
+  /*.carousel-cell iframe{
+      max-width: 100%;
+      max-height: 100%;
+
+  }*/
+  
+  
+  /* cell number */
+  
+
+
+  }
+  
+  /* cell number */
+
+  
+  
+
+@media screen and (max-width : 1000px) {
+    nav{
+        flex-direction:row;
+        
+    }
+    .flex-align-right{
+        margin-left: 0;
+    }
+}
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 500px) {
+    /*shows elements in a column*/
+    ul{
+      flex-direction: column;
+    }
+    
+    /* deletes margin on top or bottom of the a tag*/
+    li{
+      margin: 0;
+    }
+   /* makes sure that the a tag will take the entire screen*/
+    a{
+      display: block;
+    }
+  }
